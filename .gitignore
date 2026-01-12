@@ -1,0 +1,72 @@
+# ===============================
+# Python cache & compiled files
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ===============================
+# Virtual environments
+# ===============================
+.env
+.venv
+venv/
+ENV/
+# ===============================
+# Data files (DO NOT TRACK RAW DATA)
+# ===============================
+data/raw/
+data/processed/
+*.csv
+*.parquet
+
+# ===============================
+# Vector stores & embeddings
+# ===============================
+vector_store/
+*.faiss
+*.index
+
+# ===============================
+# Logs & temp files
+# ===============================
+*.log
+*.tmp
+
+# ===============================
+# VS Code settings (optional)
+# ===============================
+.vscode/*
+!.vscode/settings.json
+
+# ===============================
+# OS generated files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Pytest & coverage
+# ===============================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===============================
+# Streamlit / Gradio cache
+# ===============================
+.streamlit/
+.gradio/
+
+# ===============================
+# Secrets & credentials
+# ===============================
+.env.*
+*.key
+*.pem
+
+# ===============================
+# Model & cache files
+# ===============================
+.cache/
