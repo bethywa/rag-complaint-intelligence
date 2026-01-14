@@ -1,0 +1,21 @@
+# Core Python
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+
+# Jupyter / Notebooks
+jupyter
+ipykernel
+
+# Text processing
+nltk
+regex
+
+# Progress bars & utilities
+tqdm
+
+# Testing (already used by CI)
+pytest

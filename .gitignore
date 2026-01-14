@@ -37,7 +37,7 @@ vector_store/
 # ===============================
 # VS Code settings (optional)
 # ===============================
-.vscode/*
+.vscode/*pi
 !.vscode/settings.json
 
 # ===============================
