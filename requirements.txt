@@ -19,3 +19,18 @@ tqdm
 
 # Testing (already used by CI)
 pytest
+
+
+
+# Text processing & chunking
+langchain
+langchain-community
+langchain-text-splitters
+
+# Embeddings
+sentence-transformers
+torch
+
+# Vector store
+chromadb
+

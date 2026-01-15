@@ -3,12 +3,34 @@ import re
 import pandas as pd
 
 
-REQUIRED_PRODUCTS = {
-    "Credit card",
-    "Personal loan",
-    "Savings account",
-    "Money transfers",
+# Map raw CFPB product labels to project-level categories
+PRODUCT_MAPPING = {
+    # Credit card
+    "Credit card": "Credit card",
+    "Credit card or prepaid card": "Credit card",
+    "Prepaid card": "Credit card",
+
+    # Personal loan
+    "Payday loan, title loan, or personal loan": "Personal loan",
+    "Payday loan, title loan, personal loan, or advance loan": "Personal loan",
+    "Consumer Loan": "Personal loan",
+    "Payday loan": "Personal loan",
+    "Vehicle loan or lease": "Personal loan",
+
+    # Savings account
+    "Checking or savings account": "Savings account",
+    "Bank account or service": "Savings account",
+
+    # Money transfers
+    "Money transfer, virtual currency, or money service": "Money transfers",
+    "Money transfers": "Money transfers",
+
+    # Credit reporting
+    "Credit reporting": "Credit reporting",
+    "Credit reporting or other personal consumer reports": "Credit reporting",
+    "Credit reporting, credit repair services, or other personal consumer reports": "Credit reporting",
 }
+
 
 
 BOILERPLATE_PATTERNS = [
@@ -51,11 +73,19 @@ def normalize_text(text) -> str:
 
 def filter_products(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Keep only complaints related to required products.
+    Filter dataset to required products and map them to
+    unified project-level product categories.
     """
     df = df.copy()
-    df["Product"] = df["Product"].str.strip()
-    return df[df["Product"].isin(REQUIRED_PRODUCTS)]
+
+    # Keep only rows we know how to map
+    df = df[df["Product"].isin(PRODUCT_MAPPING.keys())]
+
+    # Map raw labels to clean categories
+    df["Product"] = df["Product"].map(PRODUCT_MAPPING)
+
+    return df
+
 
 
 def remove_empty_narratives(df: pd.DataFrame) -> pd.DataFrame:
