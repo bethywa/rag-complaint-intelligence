@@ -245,9 +245,9 @@ cd rag-complaint-intelligence
 ## 4️⃣ Run the Application
     Gardio run app.py
 
-    
 
-####📊 Project Status
+
+#### 📊 Project Status
 ✅ Completed
 
 . Data preprocessing & EDA
