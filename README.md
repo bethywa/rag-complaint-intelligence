@@ -273,7 +273,8 @@ This project is part of an **educational portfolio** and demonstrates best pract
 
 ## 👤 Author
 
-**bethelihem 
+Bethelihem 
+ 
 10 Academy – Artificial Intelligence Program
 
 
