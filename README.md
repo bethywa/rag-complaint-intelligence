@@ -79,7 +79,7 @@ This project builds a **Complaint Intelligence Assistant** that:
         ┌─────────────────┐
         │  RAG Pipeline   │
         │  ┌───────────┐  │
-        │  │ Retrieval │──┼──► Vector Store (ChromaDB)
+        │  │ Retrieval │──┼──► Vector Store (Faiss)
         │  └───────────┘  │
         │  ┌───────────┐  │
         │  │ Generation│──┼──► LLM (Transformers)
