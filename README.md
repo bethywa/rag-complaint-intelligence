@@ -230,7 +230,7 @@ This project builds a **Complaint Intelligence Assistant** that:
 ## ▶️ Installation & Running the App
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/your-username/rag-complaint-intelligence.git
 cd rag-complaint-intelligence
 
@@ -246,7 +246,7 @@ cd rag-complaint-intelligence
     Gardio run app.py
 
 
----
+
 ## 📊 Project Status
 
 ### ✅ Completed
@@ -262,7 +262,6 @@ cd rag-complaint-intelligence
 - REST API  
 - Advanced analytics dashboard  
 
----
 
 ## 📝 Notes
 
@@ -272,13 +271,10 @@ This project is part of an **educational portfolio** and demonstrates best pract
 - Natural Language Processing (NLP)  
 - LLM-based systems  
 
----
-
 ## 👤 Author
 
 **bethelihem 
 10 Academy – Artificial Intelligence Program
 
----
 
 
