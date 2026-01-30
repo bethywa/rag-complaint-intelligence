@@ -107,35 +107,42 @@ This project builds a **Complaint Intelligence Assistant** that:
 
 ## 📁 Project Structure
 
-rag-complaint-intelligence/
-├── .github/workflows/
-│ └── unittests.yml
-├── data/
-│ ├── raw/
-│ │ └── complaints.csv
-│ └── processed/
-│ ├── filtered_complaints.csv
-│ └── sampled_complaints.csv
-├── notebooks/
-│ ├── task1_eda.ipynb
-│ ├── task2_chunking_embedding_indexing.ipynb
-│ └── task3_evaluation.ipynb
-├── src/
-│ ├── preprocessing.py
-│ ├── build_faiss_index.py
-│ ├── vector_store.py
-│ ├── retriever.py
-│ ├── generator.py
-│ ├── prompt.py
-│ └── pipeline.py
-├── vector_store/
-│ └── faiss/
-│ ├── index.faiss
-│ └── metadata.pkl
-├── app.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+            rag-complaint-intelligence/
+            │
+            ├── .github/workflows/
+            │   └── unittests.yml
+            │
+            ├── data/
+            │   ├── raw/
+            │   │   └── complaints.csv
+            │   └── processed/
+            │       ├── filtered_complaints.csv
+            │       └── sampled_complaints.csv
+            │
+            ├── notebooks/
+            │   ├── task1_eda.ipynb
+            │   ├── task2_chunking_embedding_indexing.ipynb
+            │   └── task3_evaluation.ipynb
+            │
+            ├── src/
+            │   ├── preprocessing.py
+            │   ├── build_faiss_index.py
+            │   ├── vector_store.py
+            │   ├── retriever.py
+            │   ├── prompt.py
+                ├── generator.py
+            │   └── pipeline.py
+            │
+            ├── vector_store/
+            │   ├── faiss/
+            │   │   ├── index.faiss
+            │   │   └── metadata.pkl
+            │   └── complaint_embeddings.parquet
+            │
+            ├── app.py
+            ├── requirements.txt
+            ├── README.md
+            └── .gitignore
 
 
 
@@ -238,25 +245,24 @@ cd rag-complaint-intelligence
 ## 4️⃣ Run the Application
     Gardio run app.py
 
+    
 
 ####📊 Project Status
 ✅ Completed
 
-  . Data preprocessing & EDA
-  . Embedding & FAISS indexing
-  . RAG pipeline
-  . Evaluation framework
-  . gardio application
-
+. Data preprocessing & EDA
+. Embedding & FAISS indexing
+. RAG pipeline
+. Evaluation framework
+. gardio application
 ### 🚧 Planned Improvements
 
- . Performance optimization
- . Docker deployment
- . REST API
- . Advanced analytics dashboard
+. Performance optimization
+. Docker deployment
+. REST API
+. Advanced analytics dashboard
 
 #### 📝 Notes
-
 This project is part of an educational portfolio and demonstrates best practices in:
 
  . Data Engineering
