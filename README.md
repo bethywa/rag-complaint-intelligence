@@ -247,31 +247,37 @@ cd rag-complaint-intelligence
 
 
 
-#### 📊 Project Status
-✅ Completed
+## 📊 Project Status
 
-. Data preprocessing & EDA
-. Embedding & FAISS indexing
-. RAG pipeline
-. Evaluation framework
-. gardio application
+### ✅ Completed
+- Data preprocessing & EDA  
+- Embedding & FAISS indexing  
+- RAG pipeline  
+- Evaluation framework  
+- Streamlit application  
+
 ### 🚧 Planned Improvements
+- Performance optimization  
+- Docker deployment  
+- REST API  
+- Advanced analytics dashboard  
 
-. Performance optimization
-. Docker deployment
-. REST API
-. Advanced analytics dashboard
+---
 
-#### 📝 Notes
-This project is part of an educational portfolio and demonstrates best practices in:
+## 📝 Notes
 
- . Data Engineering
- . Machine Learning
- . NLP
- . LLM-based systems
+This project is part of an **educational portfolio** and demonstrates best practices in:
+- Data Engineering  
+- Machine Learning  
+- Natural Language Processing (NLP)  
+- LLM-based systems  
 
-👤 Author
+---
 
-Bethelihem
+## 👤 Author
+
+**bethelihem 
+10 Academy – Artificial Intelligence Program
+
 
 
