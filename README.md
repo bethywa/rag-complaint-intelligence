@@ -246,7 +246,7 @@ cd rag-complaint-intelligence
     Gardio run app.py
 
 
-
+---
 ## 📊 Project Status
 
 ### ✅ Completed
@@ -279,5 +279,6 @@ This project is part of an **educational portfolio** and demonstrates best pract
 **bethelihem 
 10 Academy – Artificial Intelligence Program
 
+---
 
 
