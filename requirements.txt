@@ -33,4 +33,5 @@ torch
 
 # Vector store
 chromadb
+faiss-cpu-1.13.2
 
